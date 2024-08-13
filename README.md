@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/four-card-component-OMBHjbD9T1
+- Live Site URL: https://arekr93.github.io/Four_card/
 
 ## My process
 
