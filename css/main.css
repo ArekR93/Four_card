@@ -9,4 +9,79 @@
 body {
   font-size: 62.5%;
   font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.four-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+}
+.four-card-container .four-card-header {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.four-card-container .four-card-header .four-card-title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: hsl(229, 6%, 66%);
+}
+.four-card-container .four-card-header .four-card-title .title-bold {
+  font-weight: bold;
+  color: hsl(234, 12%, 34%);
+}
+.four-card-container .four-card-header .four-card-info {
+  font-size: 0.82rem;
+}
+.four-card-container .four-card-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.four-card-container .four-card-body .card {
+  position: relative;
+  padding: 1.5em 2em;
+  max-width: 300px;
+  min-height: 200px;
+  box-shadow: 0 5px 10px hsl(229, 6%, 66%);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+.four-card-container .four-card-body .card .card-title {
+  font-size: 1rem;
+  color: hsl(234, 12%, 34%);
+}
+.four-card-container .four-card-body .card .card-info {
+  font-size: 0.8rem;
+  color: hsl(234, 12%, 34%);
+}
+.four-card-container .four-card-body .card .card-photo {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+}
+.four-card-container .four-card-body .suprevisor-card {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.four-card-container .four-card-body .teambuilder-card {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.four-card-container .four-card-body .karma-card {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.four-card-container .four-card-body .calculator-card {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+footer {
+  text-align: center;
+  padding: 1em 4em;
 }/*# sourceMappingURL=main.css.map */
