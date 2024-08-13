@@ -24,79 +24,123 @@ body {
 	font-family: "Poppins", sans-serif;
 }
 
-.wrapper{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
-.four-card-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 2em;
-    .four-card-header{
-        text-align: center;
-        margin-bottom: 4em;
-        .four-card-title{
-            font-size: 1.3rem;
-            font-weight: 300;
-            color: $grayishBlue;
-            .title-bold{
-                font-weight: bold;
-                color: $veryDarkBlue;
-            }
-        }
-        .four-card-info{
-            font-size: .82rem;
-        }
-    }
-    .four-card-body{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        .card{
-            position: relative;
-            padding: 1.5em 2em;
-            max-width: 300px;
-            min-height: 200px;
-            box-shadow: 0 5px 10px $grayishBlue;
-            border: none;
-            border-radius: 5px;
-            margin-bottom: 2em;
-            .card-title{
-                font-size: 1rem;
-                color:$veryDarkBlue;
-            }
-            .card-info{
-                font-size: .8rem;
-                color: $veryDarkBlue;
-            }
-            .card-photo{
-                position: absolute;
-                bottom: 2em;
-                right: 2em;
-            }
-        }
-        .suprevisor-card{
-            border-top: 4px solid $cyan;
-        }
-        .teambuilder-card{
-            border-top: 4px solid $red;
-        }
-        .karma-card{
-            border-top: 4px solid $orange;
-        }
-        .calculator-card{
-            border-top: 4px solid $blue;
-        }
-    }
+.four-card-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 2em;
+	.four-card-header {
+		text-align: center;
+		margin-bottom: 4em;
+		.four-card-title {
+			font-size: 1.3rem;
+			font-weight: 300;
+			color: $grayishBlue;
+			.title-bold {
+				font-weight: bold;
+				color: $veryDarkBlue;
+			}
+		}
+		.four-card-info {
+			font-size: 0.82rem;
+		}
+	}
+	.four-card-body {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		.card {
+			position: relative;
+			padding: 1.5em 2em;
+			max-width: 300px;
+			min-height: 200px;
+			box-shadow: 0 5px 10px $grayishBlue;
+			border: none;
+			border-radius: 5px;
+			margin-bottom: 2em;
+			.card-title {
+				font-size: 1rem;
+				color: $veryDarkBlue;
+			}
+			.card-info {
+				font-size: 0.8rem;
+				color: $veryDarkBlue;
+			}
+			.card-photo {
+				position: absolute;
+				bottom: 2em;
+				right: 2em;
+			}
+		}
+		.suprevisor-card {
+			border-top: 4px solid $cyan;
+		}
+		.teambuilder-card {
+			border-top: 4px solid $red;
+		}
+		.karma-card {
+			border-top: 4px solid $orange;
+		}
+		.calculator-card {
+			border-top: 4px solid $blue;
+		}
+	}
 }
 
-footer{
-    text-align: center;
-    padding: 1em 4em;
+footer {
+	text-align: center;
+	padding: 1em 4em;
 }
 
 //Media
+
+@media (min-width: 1200px) {
+	.four-card-container {
+		.four-card-header {
+			width: 50%;
+			.four-card-title {
+				font-size: 2.2rem;
+			}
+			.four-card-info {
+				font-size: 1rem;
+			}
+		}
+        .four-card-body {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            .teambuilder-card {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .karma-card{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .calculator-card{
+                position: absolute;
+                right: 10em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .suprevisor-card{
+                position: absolute;
+                left: 10em;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+	}
+
+}

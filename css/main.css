@@ -84,4 +84,45 @@ body {
 footer {
   text-align: center;
   padding: 1em 4em;
+}
+
+@media (min-width: 1200px) {
+  .four-card-container .four-card-header {
+    width: 50%;
+  }
+  .four-card-container .four-card-header .four-card-title {
+    font-size: 2.2rem;
+  }
+  .four-card-container .four-card-header .four-card-info {
+    font-size: 1rem;
+  }
+  .four-card-container .four-card-body {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+  .four-card-container .four-card-body .teambuilder-card {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .four-card-container .four-card-body .karma-card {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .four-card-container .four-card-body .calculator-card {
+    position: absolute;
+    right: 10em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .four-card-container .four-card-body .suprevisor-card {
+    position: absolute;
+    left: 10em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }/*# sourceMappingURL=main.css.map */
