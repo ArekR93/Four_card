@@ -11,7 +11,15 @@ $veryDarkBlue: hsl(234, 12%, 34%);
 $grayishBlue: hsl(229, 6%, 66%);
 $veryLightGray: hsl(0, 0%, 98%);
 
-body{
-    font-size: 62.5%;
-    font-family: "Poppins", sans-serif;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: "Poppins", sans-serif;
 }
